@@ -23,12 +23,22 @@ Commonly, you'll want to automate your tagging process.  As you release features
 
 * Ensuring your repository is properly tagged based on release versions
 
+## Currently Supported Frameworks
+
+This is the current state of the utility and what it supports.
+
+| Framework   | File Read         |   Status     |
+|-------------|-------------------|--------------|
+| Generic     |`VERSION`          | In Progress  |
+| Node.js     | `package.json`    | In Progress  |
+
 ## Requirements
 
 Without bloating the utility with a ton of _required_ options, the `go-tag` utility depends on certain aspects being present in each of your git repositories.
 
 * You are authorized to push against the repository.
 * All of the credentials are properly configured in your shell.
+* You have one of the files described in the [Currently Supported Frameworks](#currently-supported-frameworks).  This file lives in the root of where the utility is ran.
 
 ### Installation
 
@@ -53,9 +63,9 @@ None, this utility is called within the current git repository and it will make 
 
 This utility depends on _you_ having the right credentials set.
 
-Additionally, this utility only works with Node.js projects, namely projects with a `package.json` file.  The reason for this is because the application looks into this configuration file to determine what tag version to set.
+Additionally, this utility only works with Node.js projects(for now), namely projects with a `package.json` file.  The reason for this is because the application looks into this configuration file to determine what tag version to set.
 
-In the future, tagging will be much more automated.
+In the future, tagging will extend to other languages and frameworks.
 
 # License
 
