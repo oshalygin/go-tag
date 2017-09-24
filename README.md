@@ -27,10 +27,10 @@ Commonly, you'll want to automate your tagging process.  As you release features
 
 This is the current state of the utility and what it supports.
 
-| Framework   | File Read         |   Status     |
-|-------------|-------------------|--------------|
-| Generic     |`VERSION`          | In Progress  |
-| Node.js     | `package.json`    | In Progress  |
+| Framework   | File Read         |   Status     |   Examples     |
+|-------------|-------------------|--------------|----------------|
+| Generic     | **VERSION**       | In Progress  | [VERSION](test-files/VERSION) |
+| Node.js     | **package.json**  | In Progress  | [package.json](test-files/package.json) |
 
 ## Requirements
 

@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.0.7 (September 24, 2017)
+
+- Documentation updates to reflect examples of supported frameworks.
+
 ## 0.0.6 (September 24, 2017)
 
 - Addition of a struct representation of a typical `package.json` file.
