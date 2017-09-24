@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.0.6 (September 24, 2017)
+
+- Addition of a struct representation of a typical `package.json` file.
+
 ## 0.0.5 (September 24, 2017)
 
 - Addition of a Framework resolver which determines the framework based on the files present in the directory.
