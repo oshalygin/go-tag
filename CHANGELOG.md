@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.0.4 (September 23, 2017)
+
+- Addition of a git service to handle tagging and pushing the tags
+
 ## 0.0.3 (September 23, 2017)
 
 - Addition version flag to determine the current version of `go-tag`

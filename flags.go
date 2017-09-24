@@ -8,7 +8,7 @@ import (
 func printVersion() string {
 	result, err := ioutil.ReadFile("./VERSION")
 	if err != nil {
-		fmt.Println("This application is currently not versioned")
+		fmt.Println("This application is not versioned")
 	}
 
 	content := string(result)

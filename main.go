@@ -15,4 +15,6 @@ func main() {
 	if versionFlagPassed == true {
 		printVersion()
 	}
+
+	// services.Tag("0.0.3")
 }
