@@ -63,9 +63,9 @@ None, this utility is called within the current git repository and it will make 
 
 This utility depends on _you_ having the right credentials set.
 
-Additionally, this utility only works with Node.js projects(for now), namely projects with a `package.json` file.  The reason for this is because the application looks into this configuration file to determine what tag version to set.
+Additionally, this utility only works with Node.js projects(for now), namely projects with a `package.json` file _AND_ generic version files. Please reference the [Currently Supported Frameworks](#currently-supported-frameworks) section for supported frameworks.
 
-In the future, tagging will extend to other languages and frameworks.
+More frameworks are coming, so if you see something that isn't supported, post an Issue!
 
 # License
 

@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.0.8 (September 24, 2017)
+
+- Cleaned up Limitations section in README.md to clearly explain the supported frameworks.
+
 ## 0.0.7 (September 24, 2017)
 
 - Documentation updates to reflect examples of supported frameworks.
