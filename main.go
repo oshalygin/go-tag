@@ -1,9 +1,18 @@
 package main
 
 import (
-	"fmt"
+	"flag"
 )
 
+var versionFlagPassed bool
+
+func init() {
+	flag.BoolVar(&versionFlagPassed, "version", false, "Print the version of the application")
+	flag.Parse()
+}
+
 func main() {
-	fmt.Println("The start of something great")
+	if versionFlagPassed == true {
+		printVersion()
+	}
 }
