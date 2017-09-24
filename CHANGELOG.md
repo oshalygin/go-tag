@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 0.0.5 (September 24, 2017)
+
+- Addition of a Framework resolver which determines the framework based on the files present in the directory.
+  - Addition of a framework constants export, which provides the currently supported versions.
+
 ## 0.0.4 (September 23, 2017)
 
 - Addition of a git service to handle tagging and pushing the tags
