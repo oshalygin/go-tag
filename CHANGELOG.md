@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 0.0.9 (September 24, 2017)
+
+- Addition of Version Service
+  - Base implementation against the generic `VERSION` file
+
 ## 0.0.8 (September 24, 2017)
 
 - Cleaned up Limitations section in README.md to clearly explain the supported frameworks.

@@ -6,7 +6,7 @@ import (
 	. "github.com/franela/goblin"
 )
 
-func Test_Flags(t *testing.T) {
+func Test_FrameworkResolver(t *testing.T) {
 	g := Goblin(t)
 	g.Describe("Framework Resolver", func() {
 
