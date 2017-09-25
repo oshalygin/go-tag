@@ -24,3 +24,9 @@ script:
 
 after_success:
   - gox -output "dist/{{.OS}}_{{.Arch}}_{{.Dir}}"
+  - if [ "$TRAVIS_BRANCH" == "master" ]; then
+      git config credential.helper "store --file=.git/credentials";
+      echo "https://${GITHUB_TOKEN}:@github.com" > .git/credentials;
+      go install;
+      go-tag;
+    fi

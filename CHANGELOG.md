@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.0.2 (September 24, 2017)
+
+- Addition of a Travis step that uses the utility to tag the repository on a successful build.
+
 ## 1.0.1 (September 24, 2017)
 
 - Documentation updates providing an example of how to retrieve the binaries through `wget`
