@@ -116,5 +116,20 @@ func Test_GitService(t *testing.T) {
 			g.Assert(actual).Equal(expected)
 		})
 
+		g.It("should call the git command when calling TagAndPush", func() {
+
+			expected := "git"
+			execCommand = fakeExecCommand
+			defer func() {
+				execCommand = exec.Command
+			}()
+
+			version := "1.0.3"
+			TagAndPush(version)
+
+			actual := passedInCommand
+			g.Assert(actual).Equal(expected)
+		})
+
 	})
 }

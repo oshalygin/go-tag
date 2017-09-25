@@ -2,6 +2,7 @@ package services
 
 import (
 	"bytes"
+	"errors"
 	"fmt"
 	"os/exec"
 
@@ -18,6 +19,23 @@ func printOutput(buffer ...*bytes.Buffer) {
 			fmt.Print(string(output.Bytes()))
 		}
 	}
+}
+
+// TagAndPush unifies both Tag and PushTag in a single call
+func TagAndPush(version string) error {
+	successfullyTagged := Tag(version)
+
+	if !successfullyTagged {
+		return errors.New("Failed to Tag the repository")
+	}
+
+	successfullyPushedTag := PushTag(version)
+
+	if !successfullyPushedTag {
+		return errors.New("Failed to push the Tag to your remote origin")
+	}
+
+	return nil
 }
 
 // Tag will tag the repository with the passed in version

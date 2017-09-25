@@ -1,5 +1,12 @@
 # CHANGELOG
 
+## 1.0.0 (September 24, 2017)
+
+- First release:
+  - Node.js and Generic `VERSION` files are supported out of the gate.
+  - Users of the application should reference the documentation in the README to get started.
+- Updates to the Git Service to Push and Tag in a single call, to be used by consumers.
+
 ## 0.0.12 (September 24, 2017)
 
 - Removal of `main` tests.

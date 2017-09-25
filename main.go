@@ -28,6 +28,18 @@ func main() {
 		return
 	}
 
-	color.Green(framework)
+	color.Blue("Framework %s detected", framework)
+	version, err := services.GetVersion(framework)
+
+	if err != nil {
+		color.Red(err.Error())
+		return
+	}
+
+	err = services.TagAndPush(version)
+
+	if err != nil {
+		color.Red(err.Error())
+	}
 
 }
