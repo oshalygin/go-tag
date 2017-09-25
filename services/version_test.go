@@ -92,5 +92,15 @@ func Test_VersionService(t *testing.T) {
 			g.Assert(actual).Equal(expected)
 		})
 
+		g.It("should return an error if the framework version is not supported", func() {
+			framework := "python"
+			expected := "No matching frameworks"
+
+			_, err := GetVersion(framework)
+
+			actual := err.Error()
+			g.Assert(actual).Equal(expected)
+		})
+
 	})
 }

@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.0.11 (September 24, 2017)
+
+- Version Service:  Updated tests to support the default case
+
 ## 0.0.10 (September 24, 2017)
 
 - Additional build out of the version service to support Node.js and properly return the version.
