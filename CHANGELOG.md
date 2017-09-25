@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 0.0.10 (September 24, 2017)
+
+- Additional build out of the version service to support Node.js and properly return the version.
+
 ## 0.0.9 (September 24, 2017)
 
 - Addition of Version Service

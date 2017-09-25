@@ -1,0 +1,15 @@
+{
+  "name": "test-files",
+  "description": "A test file for node packages",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "test",
+    "file",
+    "nodejs"
+  ],
+  "author": "Oleg Shalygin oshalygin@gmail.com",
+  "license": "MIT"
+}
