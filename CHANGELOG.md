@@ -1,5 +1,9 @@
 # CHANGELOG
 
+## 1.0.1 (September 24, 2017)
+
+- Documentation updates providing an example of how to retrieve the binaries through `wget`
+
 ## 1.0.0 (September 24, 2017)
 
 - First release:

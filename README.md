@@ -48,11 +48,43 @@ go get -u github.com/oshalygin/go-tag
 
 ### Usage
 
+#### Golang Installed
+
+There are numerous ways to consume this library.  If you have Golang installed on your machine, you can use the instructions in [Installation](#installation) followed by the following command:
+
 ```bash
 # Call the utility and enjoy the automation!
 
 go-tag
+```
 
+The following is an example of how you would consume this from a CI environment such as Travis.
+
+#### From CI with Bash
+
+```bash
+
+readonly utility_version="1.0.0" # pick the release version you want
+
+# Select the architecture and the OS
+# Travis CI is generally configured for the following
+# Operating System: linux
+# Architecture: amd64
+# For more information check out the #select-your-binary section
+readonly utility_binary="linux_amd64_go-tag"
+
+# If using wget, provide an output path of where the binary will live
+readonly utility="${PWD}/dist/go-tag"
+
+# Retrieve the latest binary
+wget https://github.com/oshalygin/go-tag/releases/download/$utility_version/$utility_binary \
+      -O $utility
+
+# Update access permissions of the utility
+chmod +x $utility
+
+# Usage
+sudo $utility
 ```
 
 ### Command Line Arguments
@@ -66,6 +98,13 @@ This utility depends on _you_ having the right credentials set.
 Additionally, this utility only works with Node.js projects(for now), namely projects with a `package.json` file _AND_ generic version files. Please reference the [Currently Supported Frameworks](#currently-supported-frameworks) section for supported frameworks.
 
 More frameworks are coming, so if you see something that isn't supported, post an Issue!
+
+#### Select The Right Binary
+
+If you're pulling down the binary manually, you'll need to match it to your OS and the instruction set.  Thankfully, if you pulled it via Go, the proper `$GOOS`(Operating System) and `$GOARCH` are set for you.
+
+For exciting bathroom reading checkout the Go documentation for compilation architecture descriptions and overriding defaults.
+[Go Documentation](https://golang.org/doc/install/source#environment)
 
 # License
 
