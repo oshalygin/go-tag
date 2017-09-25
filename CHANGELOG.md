@@ -1,5 +1,10 @@
 # CHANGELOG
 
+## 0.0.12 (September 24, 2017)
+
+- Removal of `main` tests.
+  - This was causing a slew of tags getting pushed through tests.  The true integration test will be tested in CI.
+
 ## 0.0.11 (September 24, 2017)
 
 - Version Service:  Updated tests to support the default case
